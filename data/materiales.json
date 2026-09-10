@@ -1,0 +1,50 @@
+[
+  {
+    "grado": "1",
+    "categoria": "clases",
+    "curso": "Física",
+    "tipo": "Clase",
+    "titulo": "Introducción al MRU",
+    "descripcion": "Clase navegable dentro de Aula CyT.",
+    "icono": "⚛️",
+    "enlace": "materiales/1ro/clases/mru.html",
+    "accion": "Explorar →",
+    "tipoArchivo": "html"
+  },
+  {
+    "grado": "1",
+    "categoria": "tareas",
+    "curso": "Física",
+    "tipo": "Tarea",
+    "titulo": "Práctica domiciliaria: MRU",
+    "descripcion": "Ejercicios para desarrollar en el cuaderno.",
+    "icono": "📝",
+    "enlace": "materiales/1ro/tareas/tarea-mru.html",
+    "accion": "Ver tarea →",
+    "tipoArchivo": "html"
+  },
+  {
+    "grado": "4",
+    "categoria": "clases",
+    "curso": "Química",
+    "tipo": "Clase",
+    "titulo": "Materia y clasificación",
+    "descripcion": "Teoría básica y ejemplos.",
+    "icono": "🧪",
+    "enlace": "materiales/4to/clases/materia.html",
+    "accion": "Explorar →",
+    "tipoArchivo": "html"
+  },
+  {
+    "grado": "4",
+    "categoria": "practicas",
+    "curso": "Química",
+    "tipo": "Práctica",
+    "titulo": "Clasificación de la materia",
+    "descripcion": "Ejercicios de clasificación.",
+    "icono": "✏️",
+    "enlace": "materiales/4to/practicas/clasificacion.html",
+    "accion": "Resolver →",
+    "tipoArchivo": "html"
+  }
+]
