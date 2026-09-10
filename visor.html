@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Visor PDF | Aula CyT</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="viewer-page">
+<div class="viewer-top">
+  <div class="viewer-title">
+    <a class="btn secondary" id="backToGrade" href="index.html">←</a>
+    <div><span class="small muted">Aula CyT · Visor</span><b id="viewerTitle">Documento</b></div>
+  </div>
+  <div class="viewer-actions">
+    <a class="btn secondary" id="openNative" href="#" target="_blank" rel="noopener"><span class="label-text">Abrir aparte</span> ↗</a>
+  </div>
+</div>
+<object id="pdfObject" class="pdf-object" type="application/pdf"></object>
+<script>
+const q=new URLSearchParams(location.search);
+const f=q.get('file'), t=q.get('title')||'Documento', g=q.get('g')||'1';
+document.getElementById('viewerTitle').textContent=t;
+document.getElementById('backToGrade').href='grado.html?g='+encodeURIComponent(g);
+if(f){
+  document.getElementById('pdfObject').data=f;
+  document.getElementById('openNative').href=f;
+}
+</script>
+</body>
+</html>

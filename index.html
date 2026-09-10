@@ -1,163 +1,90 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aula CyT</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2563eb">
+<title>Aula CyT</title>
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="#inicio">Aula CyT</a>
-      <button id="menuBtn" class="menu">☰</button>
-      <nav id="navLinks">
-        <a href="#inicio">Inicio</a>
-        <a href="#grados">Grados</a>
-        <a href="#materiales">Materiales</a>
-        <a href="#actividades">Actividades</a>
-        <a href="#consultas">Consultas</a>
-        <a href="#comunicados">Comunicados</a>
-      </nav>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="mark">A</span><span>Aula CyT</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#grados">Grados</a>
+      <a href="index.html#consultas">Consultas</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Plataforma académica</span>
+      <h1>Aprende, practica y consulta en un solo lugar.</h1>
+      <p class="lead">Clases, tareas, libros, prácticas y evaluaciones organizadas por grado. Una experiencia clara, moderna y pensada para celular.</p>
+      <div class="actions">
+        <a class="btn primary" href="#grados">Entrar a mi grado</a>
+        <a class="btn secondary" href="#consultas">Consultas académicas</a>
+      </div>
     </div>
-  </header>
-
-  <main>
-    <section id="inicio" class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">PLATAFORMA ACADÉMICA</span>
-          <h1>Física, Química y Ciencia y Tecnología en un solo lugar.</h1>
-          <p>Materiales, actividades, recursos y consultas académicas organizadas por grado.</p>
-          <div class="actions">
-            <a class="btn primary" href="#grados">Ver grados</a>
-            <a class="btn secondary" href="#consultas">Hacer una consulta</a>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Panel del estudiante</h3>
-          <div class="feature">📘 Material de clase</div>
-          <div class="feature">📝 Actividades y tareas</div>
-          <div class="feature">❓ Consultas académicas</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="grados" class="section">
-      <div class="container">
-        <span class="eyebrow">CURSOS</span>
-        <h2>Selecciona tu grado</h2>
-        <div class="grade-grid">
-          <a class="grade-card" href="#materiales" data-grade="1"><b>1.º</b><span>Primero de Secundaria</span></a>
-          <a class="grade-card" href="#materiales" data-grade="2"><b>2.º</b><span>Segundo de Secundaria</span></a>
-          <a class="grade-card" href="#materiales" data-grade="3"><b>3.º</b><span>Tercero de Secundaria</span></a>
-          <a class="grade-card" href="#materiales" data-grade="4"><b>4.º</b><span>Cuarto de Secundaria</span></a>
-          <a class="grade-card" href="#materiales" data-grade="5"><b>5.º</b><span>Quinto de Secundaria</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="materiales" class="section alt">
-      <div class="container">
-        <span class="eyebrow">BIBLIOTECA</span>
-        <h2>Materiales de clase</h2>
-        <p class="muted">Luego reemplazaremos los botones de ejemplo por tus enlaces de Google Drive.</p>
-
-        <div class="filters">
-          <button class="chip active" data-filter="all">Todos</button>
-          <button class="chip" data-filter="1">1.º</button>
-          <button class="chip" data-filter="2">2.º</button>
-          <button class="chip" data-filter="3">3.º</button>
-          <button class="chip" data-filter="4">4.º</button>
-          <button class="chip" data-filter="5">5.º</button>
-        </div>
-
-        <div class="resource-grid">
-          <article class="resource" data-grade="1"><span>1.º Sec.</span><h3>Material de Física</h3><p>Teoría, ejemplos y ejercicios.</p><a href="#" onclick="return false;">Abrir</a></article>
-          <article class="resource" data-grade="2"><span>2.º Sec.</span><h3>Material de Física</h3><p>Teoría, ejemplos y ejercicios.</p><a href="#" onclick="return false;">Abrir</a></article>
-          <article class="resource" data-grade="3"><span>3.º Sec.</span><h3>Álgebra y Física</h3><p>Material complementario.</p><a href="#" onclick="return false;">Abrir</a></article>
-          <article class="resource" data-grade="4"><span>4.º Sec.</span><h3>Química</h3><p>Materia, mezclas y estructura atómica.</p><a href="#" onclick="return false;">Abrir</a></article>
-          <article class="resource" data-grade="5"><span>5.º Sec.</span><h3>Física</h3><p>Electricidad, estática y vectores.</p><a href="#" onclick="return false;">Abrir</a></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="actividades" class="section">
-      <div class="container">
-        <span class="eyebrow">TRABAJO ACADÉMICO</span>
-        <h2>Actividades y tareas</h2>
-        <div class="task">
-          <div><b>4.º Secundaria</b><h3>Actividad de Química</h3><p>Revisar el material y desarrollar la actividad indicada.</p></div>
-          <span class="badge">Vigente</span>
-        </div>
-        <div class="task">
-          <div><b>5.º Secundaria</b><h3>Práctica de Física</h3><p>Resolver la guía de ejercicios publicada.</p></div>
-          <span class="badge">Próxima</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="consultas" class="section alt">
-      <div class="container two-col">
-        <div>
-          <span class="eyebrow">CONSULTAS ACADÉMICAS</span>
-          <h2>¿Tienes una duda?</h2>
-          <p>Canal destinado exclusivamente a clases, tareas, evaluaciones y materiales académicos.</p>
-          <ul>
-            <li>Sin redes sociales personales.</li>
-            <li>Un solo canal académico para todos.</li>
-            <li>Sin pedir información personal innecesaria.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <form id="academicForm">
-            <label>Nombre y apellido<input required type="text" placeholder="Escribe tu nombre"></label>
-            <label>Grado
-              <select required>
-                <option value="">Seleccionar</option>
-                <option>1.º Secundaria</option>
-                <option>2.º Secundaria</option>
-                <option>3.º Secundaria</option>
-                <option>4.º Secundaria</option>
-                <option>5.º Secundaria</option>
-              </select>
-            </label>
-            <label>Curso
-              <select required>
-                <option value="">Seleccionar</option>
-                <option>Física</option>
-                <option>Química</option>
-                <option>Ciencia y Tecnología</option>
-              </select>
-            </label>
-            <label>Tema<input required type="text" placeholder="Ej. MRUV"></label>
-            <label>Consulta<textarea required rows="5" placeholder="Escribe tu consulta"></textarea></label>
-            <button class="btn primary full" type="submit">Enviar consulta</button>
-            <p id="formMessage" class="small muted">Modo demostración: después conectaremos Google Forms para recibir las consultas.</p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section id="comunicados" class="section">
-      <div class="container">
-        <span class="eyebrow">INFORMACIÓN</span>
-        <h2>Comunicados</h2>
-        <div class="notice-grid">
-          <article class="notice"><b>Material actualizado</b><p>Se publicaron nuevos recursos para las clases de esta semana.</p></article>
-          <article class="notice"><b>Canal académico</b><p>Las consultas de estudiantes se realizan mediante esta plataforma.</p></article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <b>Aula CyT</b>
-      <p>Plataforma académica de Física, Química y Ciencia y Tecnología.</p>
+    <div class="card hero-card">
+      <h3>Tu aula digital</h3>
+      <div class="feature"><span class="ficon physics">⚛️</span><div><b>Física</b><div class="small muted">Problemas, teoría y práctica</div></div></div>
+      <div class="feature"><span class="ficon chem">🧪</span><div><b>Química</b><div class="small muted">Conceptos, ejercicios y recursos</div></div></div>
+      <div class="feature"><span class="ficon cyt">🌱</span><div><b>Ciencia y Tecnología</b><div class="small muted">Material académico integrado</div></div></div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="app.js"></script>
+<section class="section" id="grados">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">Grados</span><h2>Selecciona tu aula</h2></div>
+      <p>Entra directamente al contenido correspondiente a tu grado.</p>
+    </div>
+    <div class="grade-grid">
+      <a class="grade-card" href="grado.html?g=1"><span class="num">1.º</span><h3>Primero</h3><p>Clases, tareas, libros, prácticas y evaluaciones.</p><span class="open">Entrar →</span></a>
+      <a class="grade-card" href="grado.html?g=2"><span class="num">2.º</span><h3>Segundo</h3><p>Clases, tareas, libros, prácticas y evaluaciones.</p><span class="open">Entrar →</span></a>
+      <a class="grade-card" href="grado.html?g=3"><span class="num">3.º</span><h3>Tercero</h3><p>Clases, tareas, libros, prácticas y evaluaciones.</p><span class="open">Entrar →</span></a>
+      <a class="grade-card" href="grado.html?g=4"><span class="num">4.º</span><h3>Cuarto</h3><p>Clases, tareas, libros, prácticas y evaluaciones.</p><span class="open">Entrar →</span></a>
+      <a class="grade-card" href="grado.html?g=5"><span class="num">5.º</span><h3>Quinto</h3><p>Clases, tareas, libros, prácticas y evaluaciones.</p><span class="open">Entrar →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="consultas">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">Consultas</span><h2>Canal académico</h2></div>
+      <p>Un espacio único para centralizar la comunicación académica.</p>
+    </div>
+    <div class="notice-grid">
+      <article class="notice">
+        <span class="label info">ESTUDIANTES</span>
+        <h3>Consultas académicas</h3>
+        <p>Este espacio estará destinado a dudas sobre clases, tareas, evaluaciones y materiales.</p>
+      </article>
+      <article class="notice">
+        <span class="label family">FAMILIAS</span>
+        <h3>Información organizada</h3>
+        <p>La plataforma también puede compartirse con padres de familia para revisar materiales y avisos.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div><b>Aula CyT</b><p>Física · Química · Ciencia y Tecnología</p></div>
+    <div><p>Plataforma académica para estudiantes y familias.</p></div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
 </body>
 </html>

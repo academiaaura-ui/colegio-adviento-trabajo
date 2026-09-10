@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2563eb">
+<title>Grado | Aula CyT</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="mark">A</span><span>Aula CyT</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#grados">Grados</a>
+      <a href="index.html#consultas">Consultas</a>
+    </nav>
+  </div>
+</header>
+
+<section class="grade-hero">
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Inicio</a> / Aula del grado</div>
+    <div class="grade-title">
+      <span class="grade-badge" id="gradeBadge">1.º</span>
+      <div>
+        <span class="eyebrow">Aula del grado</span>
+        <h2 id="gradeTitle" style="margin-bottom:6px">Secundaria</h2>
+        <p class="muted" style="margin:0">Explora el contenido por secciones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tabs-wrap">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab active" data-category="clases">Clases <span class="count" data-count="clases">0</span></button>
+      <button class="tab" data-category="tareas">Tareas <span class="count" data-count="tareas">0</span></button>
+      <button class="tab" data-category="libros">Libros <span class="count" data-count="libros">0</span></button>
+      <button class="tab" data-category="practicas">Prácticas <span class="count" data-count="practicas">0</span></button>
+      <button class="tab" data-category="evaluaciones">Evaluaciones <span class="count" data-count="evaluaciones">0</span></button>
+    </div>
+  </div>
+</div>
+
+<section class="section alt">
+  <div class="container"><div id="library" class="library"></div></div>
+</section>
+
+
+<footer>
+  <div class="container footer-grid">
+    <div><b>Aula CyT</b><p>Física · Química · Ciencia y Tecnología</p></div>
+    <div><p>Plataforma académica para estudiantes y familias.</p></div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
